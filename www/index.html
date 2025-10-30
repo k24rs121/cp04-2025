@@ -195,6 +195,7 @@
     // ButtonBがクリックされた時の処理
     function btnBClick(e){
         active = false;
+        pausedTime = etime;
         $("#time").html("NOW");
         $("#remain").html("STOP");
         
@@ -212,7 +213,7 @@
 
     function btnDClick(e){
         active = true;
-
+        startTime = new Date() - pausedTime * 1000;
     }
     
  
