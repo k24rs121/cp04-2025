@@ -195,7 +195,8 @@
     // ButtonBがクリックされた時の処理
     function btnBClick(e){
         active = false;
-        
+        $("#time").html("NOW");
+        $("#remain").html("STOP");
         
     }
 
@@ -210,6 +211,7 @@
     }
 
     function btnDClick(e){
+        active = true;
 
     }
     
